@@ -1,0 +1,117 @@
+/**
+ * This <div> element is wrapped by jCarousel around the list
+ * and has the classname "jcarousel-container".
+ */
+.jcarousel-container {
+    position: relative;
+}
+
+.jcarousel-clip {
+    z-index: 2;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.jcarousel-list {
+    z-index: 1;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel-list li,
+.jcarousel-item {
+    float: left;
+    list-style: none;
+    /* We set the width/height explicitly. No width/height causes infinite loops. */
+    width: 75px;
+    height: 75px;
+}
+
+/**
+ * The buttons are added dynamically by jCarousel before
+ * the <ul> list (inside the <div> described above) and
+ * have the classnames "jcarousel-next" and "jcarousel-prev".
+ */
+.jcarousel-next {
+    z-index: 3;
+    display: none;
+}
+
+.jcarousel-prev {
+    z-index: 3;
+    display: none;
+}
+
+
+/* Растягиваем контейнер на 100% по ширине */
+.b-news .jcarousel-container-horizontal { 
+    width: 100%; 
+}
+.b-news .jcarousel-clip-horizontal { 
+    width: 100%; 
+}
+
+/* Задаем размер одного блока */
+.b-news .jcarousel-item, .b-news .jcarousel-list LI { 
+    margin-left: 5px;
+    width: 203px; 
+    height: auto; 
+}
+
+
+.b-news .jcarousel-list .jcarousel-linkContainer, .b-news .jcarousel-list .jcarousel-linkContainer p { 
+    font-size: 1.1em;
+    margin: 10px 0px;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 1.1em;
+}
+
+.b-news .jcarousel-list .jcarousel-newsContainer { 
+    font-size: 14px;
+    line-height: 1.2em;
+}
+
+.b-news .jcarousel-list .jcarousel-imgAva {
+    border:#fff 4px solid;
+    width: 166px; 
+    height: 90px;
+}
+
+/* Задаем внешний вид и расположение кнопок управления */
+.b-news .jcarousel-next-horizontal {
+	position: absolute;
+	top: 30px;
+	right: 35px;
+	width: 30px;
+	height: 30px;
+        opacity: 0.3;
+        filter: alpha(opacity=30);
+        -moz-opacity: 0.3;
+	cursor: pointer;
+	background: transparent url(../images/btn_next.gif) no-repeat 0 0;
+}
+.b-news .jcarousel-next-disabled-horizontal,
+.b-news .jcarousel-next-disabled-horizontal:hover,
+.b-news .jcarousel-next-disabled-horizontal:active { cursor: default; background-position: -30px 0; }
+.b-news .jcarousel-prev-horizontal {
+	position: absolute;
+	top: 30px;
+	left: 15px;
+	width: 30px;
+	height: 30px;
+        opacity: 0.3;
+        filter: alpha(opacity=30);
+        -moz-opacity: 0.3;
+	cursor: pointer;
+	background: transparent url(../images/btn_prev.gif) no-repeat 0 0;
+}
+.b-news .jcarousel-prev-disabled-horizontal,
+.b-news .jcarousel-prev-disabled-horizontal:hover,
+.b-news .jcarousel-prev-disabled-horizontal:active { cursor: default; background-position: -30px 0; }

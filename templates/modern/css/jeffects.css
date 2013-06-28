@@ -1,0 +1,31 @@
+  .effects { clear:both }  
+  .effects li { display:inline-block; *display:inline; font-size:24px; padding:4px 10px; cursor:pointer }
+  .effects li:first-child { background:#222; float:left; opacity:0.6; height:auto; width:180px; text-align:left; }
+  .effects li:hover { color:#fff; }
+   
+  i { font-size:0.5em }
+   
+  .jEffects-particle { font-size:20px; font-family:arial; z-index:2; position:absolute }
+   
+  .distance { height:80px;}
+  .distance li.first { *margin-right:160px; }
+  .distance li { *float:left; height:40px; vertical-align:top; border-top:1px solid #666; }
+   
+  .distance li img { opacity:0.6 }
+  .distance li:hover img { opacity:1.0 }
+   
+  .concentrate li { opacity:0.6; }
+  .concentrate li:hover { opacity:1.0; }
+   
+   
+  #overview { margin:auto; width:370px; text-align:left; color:#fff }
+  #overview pre { background:#246; padding:4px; }
+   
+  .themes { position:fixed; left:0; top:0; z-index:10; width:100% }
+  a.theme { float:left; background:#eee; color:#222; top:0; display:block; padding:6px; font-size:24px; height:46px; line-height:46px; }
+  a.buy { background: #202020; color:#FFFFFF; }
+  a.white { left: 0; }
+   
+  .jeffects_min { display:none }
+   
+  .jorbital { float:right; color:#fff }

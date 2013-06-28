@@ -1,0 +1,13 @@
+*+html{overflow:auto;}
+.box-shadow {behavior:url(js/PIE.htc); position:relative;}
+div.sub_menu {
+    /*behavior:url(/templates/modern/js/PIE-1.0.0/PIE.htc);*/
+    //background: transparent; 
+    //-ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/templates/modern/images/nav-bg.png',sizingMethod=scale)";
+    //background: rgb(0, 0, 0);
+    //zoom:1;
+    //-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#99000000, endColorstr=#99000000)";
+    background: #171717;
+}
+
+ 
